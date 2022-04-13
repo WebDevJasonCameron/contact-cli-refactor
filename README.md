@@ -6,17 +6,19 @@ Command Line Interface to manage a contact list
 - [X] Add a new contact
 - [X] Search a contact by their name
 - [X] Delete an existing contact
-- [X] Keep data inside a contacts.txt <br/>
-Bonus...
+- [X] Keep data inside a contacts.txt 
+#### Bonus...
 - [X] Format the phone numbers using dashes
 - [X] Allow formatting phone numbers with different lengths
 - [X] Warn user when entering duplicate contact... provide a (Y/N) response <br/>
 - [X] Keep columns equally spaced
 - [X] Add or trim spaces as needed
-Other Ideas...
 - [X] Include email
+#### Bonus +++
+- [] Email verification check: 1 @ and ".com", ".edu", or ".mil"
 - [X] Allow contact modifications
 - [] Check Email validity 
+- [] Add Sort and run it alphabetize contact.txt by last name
 
 ## Assignment Recommendations:
 - The text file should contain one contact per line

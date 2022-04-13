@@ -11,6 +11,8 @@ Bonus...
 - [X] Format the phone numbers using dashes
 - [X] Allow formatting phone numbers with different lengths
 - [X] Warn user when entering duplicate contact... provide a (Y/N) response <br/>
+- [X] Keep columns equally spaced
+- [X] Add or trim spaces as needed
 Other Ideas...
 - [X] Include email
 - [X] Allow contact modifications

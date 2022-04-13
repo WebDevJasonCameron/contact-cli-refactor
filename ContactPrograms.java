@@ -134,6 +134,9 @@ public class ContactPrograms {
                 email = input.getString("Enter Email: ");
                 contactsManager.addLines(wholeName +
                         "| " + phone + "| " + email);
+                System.out.println("Contact Added:  " + wholeName +
+                        "| " + phone + "| " + email);
+                System.out.println("<---------------------------------------------->\n");
                 contactsManager.printLines();
             } else {
                 System.out.println("This function has terminated... ");
@@ -144,6 +147,9 @@ public class ContactPrograms {
             email = input.getString("Enter Email: ");
             contactsManager.addLines(wholeName +
                     "| " + phone + "| " + email);
+            System.out.println("Contact Added:  " + wholeName +
+                    "| " + phone + "| " + email);
+            System.out.println("<---------------------------------------------->\n");
             contactsManager.printLines();
         }
         System.out.println("\n<---------------------------------------------->\n");
@@ -155,14 +161,11 @@ public class ContactPrograms {
         if(contactLine.length() > 0){
             if(input.yesNo("Contact Found.  Confirm Delete Contact: (Y/N)  ")){
                 contactsManager.deleteLine(contactLine);
-                System.out.println("--------------------------------------------");
             } else {
                 System.out.println("No Contact Was Deleted.");
-                System.out.println("--------------------------------------------");
             }
         } else {
             System.out.println("No Contact Was Deleted.");
-            System.out.println("--------------------------------------------");
         }
 
     }
