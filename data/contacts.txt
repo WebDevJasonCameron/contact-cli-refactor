@@ -5,9 +5,10 @@ John Jacob               | 123-456-7892        | john555@amail.com
 Calvin Cameron           | 456-789-1234        | calvin@theplace.com
 Mocha Cameron            | 789-456-1234        | mocha@thisplace.com
 Smash Moon               | 456-789-2583        | moon@here.com
-Roger Roger              | 111-111-1111        | roger@roger.com
 John Doe                 | 123-456-7890        | john111@amail.com
-Loco Coco                | 123-4567            | coco@loco.com
 Chuck Norris             | 1-555-555-5555      | chuck@rulesAll.com
 Road Runner              | 444-444-4444        | road@running.com
-Bart Simpson             | 555-555-4123        | wow@dude.com
+Loco Coco                | 123-4567            | loco@coco.com
+Lisa Simpson             | 555-123-4789        | lisa@springfield.edu
+Bart Simpson             | 555-369-1478        | wow@dude.com
+Roger Dodger             | 111-111-1111        | roger@roger.com

@@ -68,7 +68,7 @@ public class ContactPrograms {
         return mainLine.substring(0, first) + "| " + phone + mainLine.substring(end);
     }
     private String modEmail(String mainLine){
-        String email = input.getString("Enter First Email: ").trim();
+        String email = checkValidEmail(input.getString("Enter First Email: ").trim());;
         int first = mainLine.indexOf("|");
         int end = mainLine.indexOf("|", first + 1);
         return mainLine.substring(0, end) + "| " + email;
@@ -78,7 +78,7 @@ public class ContactPrograms {
         String lName = input.getString("Enter Last Name: ").trim();
         String phone = includeSpaces(phoneCheck(input.getString("Enter Phone Number: \n" +
                 "--> Do Not Include Dashes <--")), 20);
-        String email = input.getString("Enter First Email: ");
+        String email = checkValidEmail(input.getString("Enter First Email: ").trim());;
         String wholeName = includeSpaces(fName + " " + lName, 25);
 
         int first = mainLine.indexOf("|");
@@ -131,7 +131,7 @@ public class ContactPrograms {
             if(input.yesNo()){
                 phone = includeSpaces(phoneCheck(input.getString("Enter Phone Number: \n" +
                         "--> Do Not Include Dashes <--")), 20);
-                email = input.getString("Enter Email: ");
+                email = checkValidEmail(input.getString("Enter First Email: ").trim());;
                 contactsManager.addLines(wholeName +
                         "| " + phone + "| " + email);
                 System.out.println("Contact Added:  " + wholeName +
@@ -144,7 +144,7 @@ public class ContactPrograms {
         } else {
             phone = includeSpaces(phoneCheck(input.getString("Enter Phone Number: \n" +
                     "--> Do Not Include Dashes <--")), 20);
-            email = input.getString("Enter Email: ");
+            email = checkValidEmail(input.getString("Enter First Email: ").trim());
             contactsManager.addLines(wholeName +
                     "| " + phone + "| " + email);
             System.out.println("Contact Added:  " + wholeName +
@@ -262,7 +262,15 @@ public class ContactPrograms {
     }
 
     // Email Checks
-
+    public String checkValidEmail(String email){
+        if(email.toLowerCase().contains("@") &&
+                (email.toLowerCase().endsWith(".com") ||
+                        email.toLowerCase().endsWith(".edu") ||
+                        email.toLowerCase().endsWith(".mil") )) return email;
+        System.out.println("I'm sorry, that is not a valid Email.  Please Try Again...");
+        System.out.println("\n<---------------------------------------------->\n");
+        return checkValidEmail(input.getString("Enter Email: ").trim());
+    }
 
 
 

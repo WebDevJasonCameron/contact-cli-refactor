@@ -15,10 +15,13 @@ Command Line Interface to manage a contact list
 - [X] Add or trim spaces as needed
 - [X] Include email
 #### Bonus +++
-- [] Email verification check: 1 @ and ".com", ".edu", or ".mil"
+- [X] Email verification check: 1 @ and ".com", ".edu", or ".mil"
 - [X] Allow contact modifications
-- [] Check Email validity 
 - [] Add Sort and run it alphabetize contact.txt by last name
+
+### Current App Status in Action:
+![](img/contact_cli_2022_04_17.gif)
+
 
 ## Assignment Recommendations:
 - The text file should contain one contact per line
